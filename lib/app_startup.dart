@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nolatech_cancha_tennis/app_startup_error.dart';
-import 'package:nolatech_cancha_tennis/common/providers/riverpod_app_startup.dart';
-import 'package:nolatech_cancha_tennis/features/home/presentation/page_home.dart';
+import 'package:nolatech_tennis_court/app_startup_error.dart';
+import 'package:nolatech_tennis_court/common/providers/riverpod_app_startup.dart';
+import 'package:nolatech_tennis_court/features/home/presentation/page_home.dart';
 
 class AppStartup extends ConsumerWidget {
   const AppStartup({super.key});

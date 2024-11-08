@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
-import 'package:nolatech_cancha_tennis/features/home/presentation/home_courts.dart';
-import 'package:nolatech_cancha_tennis/features/home/presentation/home_reservations.dart';
-import 'package:nolatech_cancha_tennis/features/home/presentation/home_reservations_card.dart';
+import 'package:nolatech_tennis_court/features/home/presentation/home_courts.dart';
+import 'package:nolatech_tennis_court/features/home/presentation/home_reservations.dart';
+import 'package:nolatech_tennis_court/features/home/presentation/home_reservations_card.dart';
 
 class PageHome extends HookWidget {
   const PageHome({super.key});

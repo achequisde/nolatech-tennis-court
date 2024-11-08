@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:nolatech_cancha_tennis/features/booking/presentation/booking_app_bar.dart';
-import 'package:nolatech_cancha_tennis/features/booking/presentation/booking_carousel.dart';
-import 'package:nolatech_cancha_tennis/features/booking/presentation/booking_court_info.dart';
-import 'package:nolatech_cancha_tennis/features/booking/presentation/booking_form.dart';
+import 'package:nolatech_tennis_court/features/booking/presentation/booking_app_bar.dart';
+import 'package:nolatech_tennis_court/features/booking/presentation/booking_carousel.dart';
+import 'package:nolatech_tennis_court/features/booking/presentation/booking_court_info.dart';
+import 'package:nolatech_tennis_court/features/booking/presentation/booking_form.dart';
 
 class PageBooking extends StatelessWidget {
   const PageBooking({super.key});

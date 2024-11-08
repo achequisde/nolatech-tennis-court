@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:gap/gap.dart';
-import 'package:nolatech_cancha_tennis/common/presentation/court_available_message.dart';
+import 'package:nolatech_tennis_court/common/presentation/court_available_message.dart';
 
 class BookingCourtInfo extends StatelessWidget {
   const BookingCourtInfo({super.key});

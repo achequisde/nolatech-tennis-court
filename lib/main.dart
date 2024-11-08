@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:nolatech_cancha_tennis/app_startup.dart';
-import 'package:nolatech_cancha_tennis/features/booking/presentation/page_booking.dart';
-import 'package:nolatech_cancha_tennis/features/login/presentation/page_login.dart';
-import 'package:nolatech_cancha_tennis/features/login/presentation/page_signup.dart';
+import 'package:nolatech_tennis_court/app_startup.dart';
+import 'package:nolatech_tennis_court/features/booking/presentation/page_booking.dart';
+import 'package:nolatech_tennis_court/features/login/presentation/page_login.dart';
+import 'package:nolatech_tennis_court/features/login/presentation/page_signup.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

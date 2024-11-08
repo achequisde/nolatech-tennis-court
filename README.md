@@ -1,4 +1,4 @@
-# nolatech_cancha_tennis
+# nolatech_tennis_court
 
 A new Flutter project.
 

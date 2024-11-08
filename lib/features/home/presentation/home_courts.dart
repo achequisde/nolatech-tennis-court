@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:nolatech_cancha_tennis/features/home/presentation/home_courts_card.dart';
+import 'package:nolatech_tennis_court/features/home/presentation/home_courts_card.dart';
 
 class HomeCourts extends StatelessWidget {
   const HomeCourts({super.key});
