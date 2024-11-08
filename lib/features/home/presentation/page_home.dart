@@ -122,7 +122,12 @@ class TabHome extends StatelessWidget {
   Widget build(BuildContext context) {
     const title = SliverToBoxAdapter(
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 23),
+        padding: EdgeInsets.only(
+          top: 20,
+          bottom: 8,
+          left: 23,
+          right: 23,
+        ),
         child: Text(
           "Hola Andrea!",
           style: TextStyle(
