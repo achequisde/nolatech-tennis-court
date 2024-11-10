@@ -1,26 +1,24 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'riverpod_app_startup.dart';
+part of 'riverpod_current_user.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$appStartupHash() => r'b2e9b2b1a85ddaa28ec07e00684781614b9f32a5';
+String _$currentUserHash() => r'2311e72c913621cf7ca33332023e9314307d7b4c';
 
-/// See also [appStartup].
-@ProviderFor(appStartup)
-final appStartupProvider = FutureProvider<void>.internal(
-  appStartup,
-  name: r'appStartupProvider',
+/// See also [CurrentUser].
+@ProviderFor(CurrentUser)
+final currentUserProvider = NotifierProvider<CurrentUser, User?>.internal(
+  CurrentUser.new,
+  name: r'currentUserProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$appStartupHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$currentUserHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-@Deprecated('Will be removed in 3.0. Use Ref instead')
-// ignore: unused_element
-typedef AppStartupRef = FutureProviderRef<void>;
+typedef _$CurrentUser = Notifier<User?>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

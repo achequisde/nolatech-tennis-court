@@ -22,6 +22,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Portones',
+      theme: ThemeData(
+        filledButtonTheme: FilledButtonThemeData(
+          style: FilledButton.styleFrom(
+            backgroundColor: const Color(0xFF82BC00),
+            shape: ContinuousRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            foregroundColor: Colors.white,
+          ),
+        ),
+      ),
       debugShowCheckedModeBanner: false,
       home: const AppStartup(),
       routes: {

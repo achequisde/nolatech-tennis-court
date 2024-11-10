@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+import 'package:nolatech_tennis_court/common/providers/riverpod_current_user.dart';
+import 'package:nolatech_tennis_court/common/providers/riverpod_db.dart';
 import 'package:nolatech_tennis_court/features/home/presentation/home_courts.dart';
 import 'package:nolatech_tennis_court/features/home/presentation/home_reservations.dart';
 import 'package:nolatech_tennis_court/features/home/presentation/home_reservations_card.dart';
@@ -115,12 +118,14 @@ class PageHome extends HookWidget {
   }
 }
 
-class TabHome extends StatelessWidget {
+class TabHome extends ConsumerWidget {
   const TabHome({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    const title = SliverToBoxAdapter(
+  Widget build(BuildContext context, WidgetRef ref) {
+    final user = ref.watch(currentUserProvider)!;
+
+    final title = SliverToBoxAdapter(
       child: Padding(
         padding: EdgeInsets.only(
           top: 20,
@@ -129,7 +134,7 @@ class TabHome extends StatelessWidget {
           right: 23,
         ),
         child: Text(
-          "Hola Andrea!",
+          "Hola ${user.name}!",
           style: TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.w600,
@@ -162,7 +167,7 @@ class TabHome extends StatelessWidget {
       ),
     );
 
-    const body = CustomScrollView(
+    final body = CustomScrollView(
       slivers: [
         title,
         SliverToBoxAdapter(
